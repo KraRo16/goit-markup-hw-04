@@ -338,6 +338,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--third-accent-color);
+    margin-bottom: 16px;
 }
 
 .employees-description {
@@ -345,7 +346,74 @@ body {
     padding-bottom: 30px;
 }
 
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-list-icon {
+    fill: #AFB1B8;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: #ffffff;
+}
+
 /*=========== /OUR TEAM ===========*/
+
+
+/*=========== OUR CLIENTS ===========*/
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-list-icon {
+    fill: #AFB1B8;
+}
+
+
+.clients-icon:hover .clients-list-icon,
+.clients-icon:focus .clients-list-icon {
+    fill: var(--accent-color);
+}
+
+.clients-list-item:not(:last-child) {
+    margin-right: 30px
+}
+
+
+/*=========== /OUR CLIENTS ===========*/
 
 /*=========== FILTER ===========*/
 .filter-modal-btn-link {
@@ -501,4 +569,46 @@ body {
 
 .address {
     margin-top: 20px;
+}
+
+.footer-title {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-social-list:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-social-list-icon {
+    fill: #FFFFFF;
+}
+
+.footer-social-link:hover .footer-social-list-icon,
+.footer-social-link:focus .footer-social-list-icon {
+    fill: #ffffff;
 }
