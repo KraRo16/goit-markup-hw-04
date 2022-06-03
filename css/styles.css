@@ -402,9 +402,13 @@ body {
     fill: #AFB1B8;
 }
 
+.clients-list-link:hover,
+.clients-list-link:focus {
+    border: 1px solid var(--accent-color)
+}
 
-.clients-icon:hover .clients-list-icon,
-.clients-icon:focus .clients-list-icon {
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
     fill: var(--accent-color);
 }
 
