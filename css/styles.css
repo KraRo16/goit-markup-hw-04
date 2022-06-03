@@ -28,6 +28,9 @@ img {
     height: auto;
 }
 
+body {
+    width: 1600px;
+}
 
 .hidden {
     visibility: hidden;
@@ -156,7 +159,11 @@ body {
     color: var(--accent-color);
 }
 
+
 .header-contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -169,13 +176,38 @@ body {
     color: var(--accent-color);
 }
 
+.header-contact-link:hover .logo-img,
+.header-contact-link:focus .logo-img {
+    fill: var(--accent-color);
+}
+
+.logo-img-email {
+    justify-content: flex-end;
+}
+
+.logo-img {
+    display: flex;
+    margin-right: 10px;
+    fill: var(--third-accent-color);
+}
+
+.e-mail {
+    width: 161px;
+}
+
+
+
 /*=========== /HEADER ===========*/
 
 /*=========== HERO ===========*/
 .hero {
     display: flex;
+    width: 1600px;
     padding: 200px 0px 200px 0px;
     text-align: center;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/bg.png');
+    background-size: cover;
 }
 
 .hero-title {
