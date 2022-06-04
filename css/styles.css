@@ -29,12 +29,9 @@ img {
     height: auto;
 }
 
-body {
-    width: 1600px;
-}
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .list {
@@ -202,13 +199,16 @@ body {
 
 /*=========== HERO ===========*/
 .hero {
-    display: flex;
-    width: 1600px;
+    max-width: 1600px;
     padding: 200px 0px 200px 0px;
     text-align: center;
     background-color: #C4C4C4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/bg.png');
     background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -385,7 +385,6 @@ body {
 /*=========== OUR CLIENTS ===========*/
 .clients-list {
     display: flex;
-    justify-content: center;
 }
 
 .clients-icon {
@@ -541,14 +540,17 @@ body {
 
 .portfolio-item {
     width: 370px;
-    height: 404px;
 }
 
-.portfolio-item:hover {
-    cursor: pointer;
-    background-color: #ffffff;
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-link {
+    display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
